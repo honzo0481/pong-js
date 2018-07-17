@@ -1,5 +1,5 @@
 import * as tf from "@tensorflow/tfjs";
-import { Game } from "../index";
+import { Game } from "..";
 
 /**
  * A reinforcement learning agent that uses a policy gradient to play pong.

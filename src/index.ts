@@ -1,6 +1,6 @@
 import * as tf from "@tensorflow/tfjs";
 import { mirrorX, mirrorY, PI, TAU } from './trig';
-import { PGAgent, RandomAgent, ReflexAgent } from './agents/index';
+import { PGAgent, RandomAgent, ReflexAgent } from './agents';
 
 enum Player {
   P1 = 'p1',
@@ -549,7 +549,7 @@ class Main {
   constructor() {
     this.game = new Game();
     this.game.setAi(new ReflexAgent(this.game));
-    this.game.setAgent1(new PGAgent(this.game));
+    this.game.setAgent1(new PGAgent(this.game, 'player1'));
   }
 }
 

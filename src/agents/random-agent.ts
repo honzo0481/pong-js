@@ -1,4 +1,4 @@
-import { Game, GameState } from "../index";
+import { Game, GameState } from "..";
 
 export class RandomAgent {
   game: Game;
